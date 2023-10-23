@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Registration Page</title>
+</head>
+<body class="bg-gray-200 flex h-screen justify-center items-center">
+    <div class="bg-white p-8 rounded-lg shadow-md w-96">
+        <h1 class="text-2xl font-semibold mb-4">Register</h1>
+        <form>
+            <div class="mb-4">
+                <label for="username" class="block text-gray-600">
+                    <i class="fas fa-user mr-2"></i>Username
+                </label>
+                <input type="text" id="username" name="username" class="w-full border border-gray-300 p-2 rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-600">
+                    <i class="fas fa-venus-mars mr-2"></i>Gender
+                </label>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="gender" value="male" class="form-radio text-blue-500">
+                        <span class="ml-2">Male</span>
+                    </label>
+                    <label class="inline-flex items-center ml-4">
+                        <input type="radio" name="gender" value="female" class="form-radio text-pink-500">
+                        <span class="ml-2">Female</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="country" class="block text-gray-600">
+                    <i class="fas fa-globe mr-2"></i>Country
+                </label>
+                <select id="country" name="country" class="w-full border border-gray-300 p-2 rounded">
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                    <i class="fas fa-user-plus mr-2"></i>Register
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
